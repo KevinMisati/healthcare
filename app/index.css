@@ -1,0 +1,129 @@
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #ff9900;
+}
+
+/* Hero Section */
+.hero {
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #444;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+/* Services Section */
+#services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1em;
+}
+
+/* Contact Section */
+#contact {
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 80%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 1em;
+}
+
+#contact form button {
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Footer */
+footer {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
