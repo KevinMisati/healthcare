@@ -2,7 +2,7 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
@@ -17,6 +17,22 @@ import { createUser } from "@/lib/actions/patient.actions";
 export const PatientForm = () => {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
+  const [greeting,setGreeting] = useState("")
+
+  useEffect(() => {
+    const currentHour = new Date().getHours();
+
+    if (currentHour >= 5 && currentHour < 12) {
+      setGreeting("Good Morning");
+    } else if (currentHour >= 12 && currentHour < 17) {
+      setGreeting("Good Afternoon");
+    } else if (currentHour >= 17 && currentHour < 21) {
+      setGreeting("Good Evening");
+    } else {
+      setGreeting("Good Night");
+    }
+  }, []);
+  
 
   const form = useForm<z.infer<typeof UserFormValidation>>({
     resolver: zodResolver(UserFormValidation),
@@ -53,8 +69,8 @@ export const PatientForm = () => {
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 space-y-6">
         <section className="mb-12 space-y-4">
-          <h1 className="header">Hi there 👋</h1>
-          <p className="text-dark-700">Get started with appointments.</p>
+          <h1 className="header">{greeting || "Hi there"} 👋</h1>
+          <p className="text-dark-700">Your health, our priority! Book appointments with trusted doctors quickly and conveniently. Let’s get started to ensure your well-being.</p>
         </section>
 
         <CustomFormField
