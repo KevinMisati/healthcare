@@ -56,6 +56,7 @@ export const AppointmentForm = ({
   const onSubmit = async (
     values: z.infer<typeof AppointmentFormValidation>
   ) => {
+    console.log(type,"hello type")
     setIsLoading(true);
 
     let status;
@@ -102,6 +103,7 @@ export const AppointmentForm = ({
           },
           type,
         };
+        console.log(appointmentToUpdate,"hello appointment here")
 
         const updatedAppointment = await updateAppointment(appointmentToUpdate);
 

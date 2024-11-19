@@ -53,7 +53,7 @@ export const getRecentAppointmentList = async () => {
       appointments.documents as Appointment[]
     ).filter((appointment) => appointment.status === "cancelled");
 
-    const data = {
+    let data = {
       totalCount: appointments.total,
       scheduledCount: scheduledAppointments.length,
       pendingCount: pendingAppointments.length,
@@ -85,7 +85,7 @@ export const getRecentAppointmentList = async () => {
       initialCounts
     );
 
-    const data = {
+    data = {
       totalCount: appointments.total,
       ...counts,
       documents: appointments.documents,
