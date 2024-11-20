@@ -153,10 +153,15 @@ header nav ul li a:hover {
     }
   }
 /* Contact Section */
-#contact {
-    color: white;
+.contact-section {
     padding: 50px 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.contact-content{
+    max-width: 800px;
 }
 
 #contact form input,
@@ -184,5 +189,4 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 50px;
 }

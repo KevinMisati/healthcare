@@ -4,6 +4,7 @@ import Header from '@/components/home/header'
 import HeroSection from '@/components/home/HeroSection'
 import Services from '@/components/home/services'
 import Contact from '@/components/home/contact'
+import Footer from '@/components/home/footer'
 
 const page = () => {
     return (
@@ -12,9 +13,7 @@ const page = () => {
             <HeroSection />
             <Services />
             <Contact />
-            <footer>
-                <p>&copy; 2024 Hospital Name. All Rights Reserved.</p>
-            </footer>
+            <Footer />
         </>
     )
 }
