@@ -15,8 +15,8 @@ const Header = () => {
             </div>
             <nav>
                 <ul>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#services" className="text-green-500">Services</a></li>
+                    <li><a href="#contact" className="text-green-500">Contact</a></li>
                 </ul>
             </nav>
         </header>

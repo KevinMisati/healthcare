@@ -4,14 +4,15 @@ import Link from 'next/link'
 const HeroSection = () => {
   return (
     <section className="hero">
-        <div className="hero-content">
-            <h1>Welcome to Our Hospital</h1>
-            <p>Your health is our top priority. Book appointments easily online.</p>
-            <Link href="/appointment" className="text-green-500 btn">
+    <div className="hero-content">
+        <h1>Welcome to Keumbu Hospital</h1>
+        <p className='text-dark-700'>Where care meets compassion. We are dedicated to providing exceptional healthcare to our community. Your health and well-being are our priority. Book an appointment with our expert medical team today.</p>
+        <Link href="/appointment" className="shad-primary-btn w-full hero-btn">
                 Book an Appointment
-            </Link>
-        </div>
-    </section>
+        </Link>
+    </div>
+</section>
+
             
   )
 }
