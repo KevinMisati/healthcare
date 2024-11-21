@@ -3,6 +3,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 !important;
 }
 
 header .logo img {
@@ -38,6 +39,14 @@ header nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient( 
+      rgba(0, 0, 0, 0.8), 
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, .9), 
+      rgba(0, 0, 0, .9) ,
+      rgba(0, 0, 0, .8),
+      rgba(0, 0, 0, .8) ), 
+      url("../public/assets/images/keumbu-bg.webp");
 }
 .hero-content{
     max-width: 800px;
@@ -144,9 +153,6 @@ header nav ul li a:hover {
     }
   }
   @media screen and (min-width: 992px) {
-    section {
-      padding: 1em 3em;
-    }
     .column {
       flex: 0 0 33.33%;
       max-width: 33.33%;

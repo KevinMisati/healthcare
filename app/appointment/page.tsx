@@ -14,7 +14,10 @@ const Home = async ({ searchParams }: SearchParamProps) => {
 
       <section className="remove-scrollbar container my-auto">
         <div className="sub-container max-w-[496px]">
-          <div style={{width:"2000px"}}>
+          <Link 
+            style={{width:"2000px"}}
+            href="/"
+          >
             <Image
               src="/assets/icons/keumbu-logo.png"
               height={1000}
@@ -22,7 +25,7 @@ const Home = async ({ searchParams }: SearchParamProps) => {
               alt="patient"
               className="mb-12 h-14 w-fit"
             />
-          </div>
+          </Link>
           <PatientForm />
 
           <div className="text-14-regular mt-20 flex justify-between">

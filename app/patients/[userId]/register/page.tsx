@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { redirect } from "next/navigation";
 
 import RegisterForm from "@/components/forms/RegisterForm";
@@ -14,13 +15,18 @@ const Register = async ({ params: { userId } }: SearchParamProps) => {
     <div className="flex h-screen max-h-screen">
       <section className="remove-scrollbar container">
         <div className="sub-container max-w-[860px] flex-1 flex-col py-10">
-          <Image
-            src="/assets/icons/keumbu-logo.png"
-            height={1000}
-            width={1000}
-            alt="patient"
-            className="mb-12 h-10 w-fit"
-          />
+        <Link 
+            style={{width:"2000px"}}
+            href="/"
+          >
+            <Image
+              src="/assets/icons/keumbu-logo.png"
+              height={1000}
+              width={1000}
+              alt="patient"
+              className="mb-12 h-14 w-fit"
+            />
+          </Link>
 
           <RegisterForm user={user} />
 
