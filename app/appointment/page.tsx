@@ -32,7 +32,7 @@ const Home = async ({ searchParams }: SearchParamProps) => {
             <p className="justify-items-end text-dark-600 xl:text-left">
               © {new Date().getFullYear()} KeumbuHealth
             </p>
-            <Link href="/?admin=true" className="text-green-500">
+            <Link href="?admin=true" className="text-green-500">
               Admin
             </Link>
           </div>
