@@ -39,7 +39,7 @@ header nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient( 
+    background-image: linear-gradient( 
       rgba(0, 0, 0, 0.8), 
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, .9), 
@@ -47,6 +47,9 @@ header nav ul li a:hover {
       rgba(0, 0, 0, .8),
       rgba(0, 0, 0, .8) ), 
       url("../public/assets/images/keumbu-bg.webp");
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
 }
 .hero-content{
     max-width: 800px;
@@ -76,6 +79,36 @@ header nav ul li a:hover {
 
 .hero-btn:hover {
     transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.75rem;
+  }
+  
+  .hero-content p {
+    font-size: 0.9rem;
+  }
 }
 
 
@@ -188,6 +221,17 @@ header nav ul li a:hover {
     font-size: 1.1em;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+
+@media (max-width: 480px) {
+  #contact form input,
+  #contact form textarea {
+    width: 100%;
+  }
+  
+  .hero-content p {
+    font-size: 0.9rem;
+  }
 }
 
 /* Footer */
